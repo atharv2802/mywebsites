@@ -50,6 +50,7 @@ body {
 #signin .logo {
 	margin-top: 5vh;
 	margin-bottom: 7vh;
+	padding-right: 5px;
 }
 
 #signin .logo img {
@@ -146,16 +147,16 @@ hr {
 }
 
 /*===========================right img==========================*/
-#right #skillup {
-	position: relative;
-	margin-top: 15vh;
-	margin-left: 25%;
+#right #skillup img {
+	position: absolute;
+	width: 100%;
+	top: 10%;
 }
 
-#right #work {
-	position: relative;
-	margin-top: 5vh;
-	margin-left: 1.5%;
+#right #work img {
+	width: 100%;
+	position: absolute;
+	top: 45%;
 }
 
 /*=========================footer===============================*/
@@ -181,7 +182,7 @@ hr {
 /* Media Queries */
 @media (min-width: 1081px) {
   #left {
-    flex: 6;
+    flex: 4;
   }
 
   #right {
@@ -189,12 +190,40 @@ hr {
   }
 }
 
+@media (max-width: 1080px) and (min-width: 767px) {
+	#signin .links a {
+	  display: block;
+	  color: #0066ff;
+	  text-decoration: none;
+	  margin-bottom: 0.5rem;
+	  text-align: center;
+	  font-size: 0.75rem;
+	  font-weight:300;
+	}
+
+	#main-footer {
+		font-size: 0.7rem;
+		font-weight: 300;
+	}
+
+	#right #skillup img {
+	position: absolute;
+	width: 100%;
+	top: 30%;
+	}
+
+	#right #work img {
+	width: 100%;
+	position: absolute;
+	top: 45%;
+	}
+}
 
 @media (max-width: 768px) {
 
   body {
   	background-color: #0d0f12;
-    overflow: auto;
+    overflow: hidden;
   }
 
   #right {
