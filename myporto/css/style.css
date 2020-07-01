@@ -9,6 +9,13 @@ body {
   font-weight: bolder;
 }
 
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*====================showcase==========================*/
 .showcase::after {
   content: '';
