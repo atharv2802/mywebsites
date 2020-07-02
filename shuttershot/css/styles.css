@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+/*==================Global=====================*/
+body {
+	font-family: 'Roboto Condensed', sans-serif ;
+	margin: 0;
+	height: auto;
+	background: #eee;
+}
+
+h1 {
+	margin: 0 1rem;
+	font-variant: small-caps;
+	font-size: 3.5rem;
+	font-weight: 500;
+}
+
+h2 {
+	margin: 0;
+	font-weight: 350;
+	font-size: 2rem;
+	text-transform: capitalize;
+}
+
+h3 {
+	margin: 0;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 300;
+	text-decoration: underline;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	font-size: 1.1rem;
+}
+
+a:hover {
+	margin-right: 5px;
+	text-decoration: underline;
+}
+
+/*===========================main========================*/
+main {
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+#landing {
+	background: #fff;
+	height: 100vh;
+}
+
+#landing-text {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+#landing-text h2 {
+  color: #888;
+}
+
+#landing-image {
+	background: url(../images/showcase.jpg);
+	background-position: center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	height: 100vh; 
+}
+
+.grid-2 {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  margin: 1rem 1rem 0 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #333;
+  transition: background 500ms ease;
+}
+
+.btn:hover {
+  background: #f4f4f4;
+}
+
+#tagline {
+	margin-left: 1rem;
+}
+
+#header {
+  padding: 1.5rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+
+#header h2 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.caption {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+#about {
+	text-align: center;
+  	padding: 2rem 1rem;
+  	margin: auto;
+  	color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #333;
+}
+
+footer h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+hr {
+	width: 80%;
+}
+
+#copyright {
+	text-align: center;
+}
+
+#myname {
+	font-variant: small-caps;
+	font-weight: 500;
+}
+
+#images img {
+	display: block;
+	height: auto;
+	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+}
+
+#imagebg {
+	width: 300px; height: 180px; margin-top: 10vh;
+}
+
+
+/*========================Media Queries=====================*/
+
+@media (max-width: 710px) {
+
+
+	.grid-2 {
+	display: grid;
+	grid-template-columns: (2 , 1fr)
+	}
+
+	#landing-image {
+	background: url();
+	background-position: center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	height: 100vh; 
+	}
+
+	#landing {
+		background: url(../images/showcase.jpg) no-repeat;
+		color: #fff;
+	}
+
+	.btn {
+		font-size: 0.9rem;
+	}
+
+	#landing {
+		height: 75vh;
+	}
+
+	h1 {
+	margin: 0 1rem;
+	font-variant: small-caps;
+	font-size: 2.5rem;
+	font-weight: 400;
+	}
+
+	h2 {
+	margin: 0;
+	font-weight: 250;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	}
+	#imagebg {
+		margin-top: 5vh;
+	}
+	a {
+		color: #fff;
+		background-color: #fff;
+	}
+
+	a:hover {
+		background-color: 	#FFFFF0;
+	}
+}
+
+@media (max-width: 505px) {
+	#imagebg {
+		margin-top: 05vh;
+	}
+}
