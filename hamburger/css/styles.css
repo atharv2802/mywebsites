@@ -2,8 +2,8 @@
 /*============================Global Styles=======================*/
 
 :root {
-  --primary-color: rgba(255,0,255, 0.55);
-  --overlay-color: rgba(75, 0, 139, 0.75);
+  --primary-color: rgba(255,0,255, 0.25);
+  --overlay-color: rgba(75, 0, 139, 0.95);
   --menu-speed: 0.75s;
 }
 
